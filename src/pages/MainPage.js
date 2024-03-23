@@ -24,7 +24,12 @@ const MainPage = () => {
       displayPage = <Game />;
       break;
   }
-  return <>{displayPage}</>;
+  return (
+    <div className="font-mono bg-purple-50 min-h-screen">
+      <h1 className="bg-purple-500 text-white p-4 text-2xl text-center">Redux Saga Slice Quiz Game</h1>
+      {displayPage}
+    </div>
+  );
 };
 
 export default MainPage;

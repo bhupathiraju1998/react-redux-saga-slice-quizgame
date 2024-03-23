@@ -5,7 +5,7 @@ import { fetchQuestionsFail, fetchQuestionsSuccess } from "../slices/game";
 
 function* fetchQuestionSaga() {
   try {
-    yield delay(2000);
+    //yield delay(60000);
     const data = yield call(fetchQuizFromApi);
     yield put(fetchQuestionsSuccess(data));
     console.log(data);
